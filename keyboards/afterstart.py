@@ -13,6 +13,7 @@ def exam_age():
     kb = ReplyKeyboardBuilder()
     kb.button(text="ОГЭ (8-9 класс)")
     kb.button(text="ЕГЭ (10-11 класс)")
+    kb.button(text="<--В главное меню")
     kb.adjust(2)
     return kb.as_markup(resize_keyboard=True)
 
@@ -20,5 +21,6 @@ def cmd_special_buttons():
     builder = ReplyKeyboardBuilder()
     builder.button(text="Запросить геолокацию", request_location=True),
     builder.button(text="Запросить контакт", request_contact=True)
+    builder.button(text="<--В главное меню")
     builder.adjust(2)
     return builder.as_markup(resize_keyboard=True)

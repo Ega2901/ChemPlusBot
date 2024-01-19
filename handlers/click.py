@@ -20,6 +20,13 @@ async def answer_yes(message: Message):
         reply_markup=exam_age()
     )
     
+@router.message(F.text.lower() == "<--в главное меню")
+async def answer_yes(message: Message):
+    await message.answer(
+        "Привет это ChemBot, здесь вы можете купить необходимый набор реактивов для ЕГЭ",
+        reply_markup=get_after()
+    )
+    
 @router.message(F.text.lower() == "купить химический набор")
 async def answer_yes(message: Message):
     await message.answer(
