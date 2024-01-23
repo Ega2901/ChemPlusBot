@@ -7,7 +7,7 @@ https://miro.com/welcomeonboard/UXllcTFHZDR5S1hUeTlDMFJPV1dvNVFtUkNQdEQ0ZnZvWmIw
 ## Second
 ### Third
 
-#Запуск
+# Запуск
 #### После клонирования репозитория на локальную машину, убедиться что установлена система Docker и выполнен вход, внутри репозитория выполнить сборку и запуск контейнера 
 Сборка:
 ```bash
